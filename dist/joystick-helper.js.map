@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../code/joystick-helper.ts"],
+  "sourcesContent": ["export function getJoystickInvertedAngle({ x_, y_ }: { x_: number; y_: number; }): number {\n    //where the virtical is inverted\n    var y = -y_;\n    var x = x_;\n    var result = 0;\n    if(y<0){\n        result = (180/Math.PI) * (Math.PI+ Math.atan2(-y,-x));\n    } else{\n        result = (180/Math.PI) * Math.atan2(y,x);\n    }\n    return result;\n}\n"],
+  "mappings": ";;;;;;AAAO,WAAS,yBAAyB,EAAE,IAAI,GAAG,GAAwC;AAEtF,QAAI,IAAI,CAAC;AACT,QAAI,IAAI;AACR,QAAI,SAAS;AACb,QAAG,IAAE,GAAE;AACH,eAAU,MAAI,KAAK,MAAO,KAAK,KAAI,KAAK,MAAM,CAAC,GAAE,CAAC,CAAC;AAAA,IACvD,OAAM;AACF,eAAU,MAAI,KAAK,KAAM,KAAK,MAAM,GAAE,CAAC;AAAA,IAC3C;AACA,WAAO;AAAA,EACX;AAXgB;",
+  "names": []
+}
